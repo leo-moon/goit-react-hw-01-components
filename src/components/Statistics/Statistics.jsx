@@ -28,6 +28,6 @@ const Statistics = ({ stats })=> {
 export default Statistics;
 
 Statistics.defaultProps = {
-  stats: [],
-  title: ""
+  title: "",
+  stats: []
 }
