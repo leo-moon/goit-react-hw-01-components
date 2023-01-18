@@ -23,7 +23,8 @@ export const App = () => {
 
   <h3>Task #2</h3>
   <Statistics title="Upload stats" stats={data} />
-  {/* <Statistics stats={data} /> */}
+  <h3>Task #2 without title</h3>
+  <Statistics stats={data} />
 
   <h3>Task #3</h3>
   <FriendList friends={friends} />; 
