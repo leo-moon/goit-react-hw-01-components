@@ -1,7 +1,7 @@
 import './statistics.css';
 // import bgcs from './colors.json'
 
-const Statistics = ({ stats })=> {
+const Statistics = ({ title, stats })=> {
   const elementsLi = stats.map(stat => 
     <li className="item" key = {stat.id} >
       <span className="label">.{stat.label}</span>
@@ -16,7 +16,7 @@ const Statistics = ({ stats })=> {
 
   return (
     <section className="statistics">
-      <h2 className="title">Upload stats</h2>
+      <h2 className="title">{title}</h2>
 
       <ul className="stat-list">
         {elementsLi}
