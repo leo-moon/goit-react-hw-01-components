@@ -29,3 +29,10 @@ const elementsLi = stats.map( ({ parametr, value }) =>
 }
 
 export default Profile;
+
+Profile.defaultProps = {
+  username: "",
+  tag: "", 
+  location: "",
+  stats: []
+}

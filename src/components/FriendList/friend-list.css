@@ -1,0 +1,37 @@
+/* .friend-list {
+  
+} */
+
+.friend-item {
+  display: flex;
+  /* vertical-align: middle; */
+  width: 350px;
+  margin: 0 auto;
+  padding: 25px;
+  border: 2px solid #ddd;
+  border-radius: 13px;
+  box-shadow: black;
+}
+
+.friend-status,
+.friend-list-avatar,
+.friend-list-name {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+}
+
+.friend-status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  
+}
+
+.friend-list-avatar {
+  width: 60px;
+}
+
+.friend-list-name {
+  font-size: 26px;
+}

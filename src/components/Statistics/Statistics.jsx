@@ -2,11 +2,11 @@ import './statistics.css';
 // import bgcs from './colors.json'
 
 const Statistics = ({ title, stats })=> {
-  const elementsLi = stats.map(stat => 
-    <li className="item" key = {stat.id} >
-      <span className="label">.{stat.label}</span>
-      <span className="percentage">{stat.percentage}%</span>
-    </li>
+  const elementsLi = stats.map(({ id, label, percentage }) => 
+    <li key={id} className="item">
+      <span className="label">..{label}</span>
+      <span className="percentage">{percentage}%</span>
+    </li> 
     )
   // const bgcsLength = bgcs.length
   // for (let i=0 ; i < elementsLi.length; i+= 1) {
