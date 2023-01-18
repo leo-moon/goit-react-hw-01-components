@@ -2,10 +2,10 @@ import './profile.css';
 
 const Profile = ({username, tag, location, avatar, stats})=> {
 const elementsLi = stats.map( ({ parametr, value }) => 
-  <li>
-    <span className="label">{parametr}</span>
-    <span className="quantity">{value}</span>
-  </li>
+    <li className="profile__item">
+      <span className="label">{parametr}</span>
+      <span className="quantity">{value}</span>
+    </li>
   )
   
   return (
