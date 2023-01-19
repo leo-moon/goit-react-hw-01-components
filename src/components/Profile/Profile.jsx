@@ -1,27 +1,28 @@
-import './profile.css';
+import PropTypes from 'prop-types';
+import styles from './profile.module.css';
 
 const Profile = ({username, tag, location, avatar, stats})=> {
-const elementsLi = stats.map( ({ parametr, value }) => 
-    <li className="profile__item">
-      <span className="label">{parametr}</span>
-      <span className="quantity">{value}</span>
+const elementsLi = stats.map( ({ label, quantity }) => 
+    <li className={styles.item}>
+      <span className={styles.label}>{label}</span>
+      <span className={styles.quantity}>{quantity}</span>
     </li>
   )
   
   return (
-    <div className="profile">
-    <div className="description">
+    <div className={styles.profile}>
+    <div className={styles.description}>
       <img
         src={avatar}
         alt="User avatar"
-        className="avatar"
+        className={styles.avatar}
       />
-      <p className="name">{username}</p>
-      <p className="tag">@{tag}</p>
-      <p className="location">{location}</p>
+      <p className={styles.name}>{username}</p>
+      <p className={styles.tag}>@{tag}</p>
+      <p className={styles.location}>{location}</p>
     </div>
   
-    <ul className="stats">
+    <ul className={styles.stats}>
       {elementsLi}
     </ul>
   </div>
@@ -35,4 +36,15 @@ Profile.defaultProps = {
   tag: "", 
   location: "",
   stats: []
+}
+
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.arrayOf(PropTypes.shape({
+    label : PropTypes.string.isRequired,
+    quantity: PropTypes.string.isRequired
+  }))
 }

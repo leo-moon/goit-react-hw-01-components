@@ -1,21 +1,21 @@
-.transaction-history {
-  
-  min-width: 300px;width: 520px;
+.transactionhistory {
+  width: 520px;
+  min-width: 300px;
   margin: 15px auto;
 }
 
-th {
+.th {
   background-color: cornflowerblue;
   color: aliceblue;
   
 }
- th, td {
+ .th, .td {
   width: calc(100%/3);
   padding: 5px;
   font-size: 18px;
  }
 
-td {
+.td {
   text-align: center;
   border: 1px solid #ddd;
 }

@@ -1,11 +1,12 @@
-import './statistics.css';
+import style from './statistics.module.css';
+import PropTypes from 'prop-types';
 // import bgcs from './colors.json'
 
 const Statistics = ({ title, stats })=> {
   const elementsLi = stats.map(({ id, label, percentage }) => 
-    <li key={id} className="item">
-      <span className="label">..{label}</span>
-      <span className="percentage">{percentage}%</span>
+    <li key={id} className={style.item}>
+      <span className={style.label}>..{label}</span>
+      <span className={style.percentage}>{percentage}%</span>
     </li> 
     )
   // const bgcsLength = bgcs.length
@@ -15,10 +16,10 @@ const Statistics = ({ title, stats })=> {
   // }
 
   return (
-    <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
+    <section className={style.statistics}>
+      {title && <h2 className={style.title}>{title}</h2>}
 
-      <ul className="stat-list">
+      <ul className={style.list}>
         {elementsLi}
       </ul>
     </section>
@@ -30,4 +31,13 @@ export default Statistics;
 Statistics.defaultProps = {
   title: "",
   stats: []
+}
+
+Statistics.propTypes = {
+  title: PropTypes.string, 
+  stats: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string.isRequired , 
+    label: PropTypes.string.isRequired , 
+    percentage: PropTypes.number.isRequired
+  }))
 }

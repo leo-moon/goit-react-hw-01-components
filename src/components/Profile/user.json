@@ -5,16 +5,16 @@
   "avatar"  : "https://cdn-icons-png.flaticon.com/512/1077/1077012.png",
   "stats"   : [
     {
-      "parametr" : "Followers",
-      "value": 1000
+      "label" : "Followers",
+      "quantity": 1000
     },
     {
-      "parametr" : "Views",
-      "value": 2000
+      "label" : "Views",
+      "quantity": 2000
     },
     {
-      "parametr" : "Likes",
-      "value": 3000
+      "label" : "Likes",
+      "quantity": 3000
     }
   ]
 }

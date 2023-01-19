@@ -1,11 +1,12 @@
 .profile {
-  /* display: flex; */
   margin: 20px auto;
   width: 330px;
   padding-top: 40px;
   justify-items: center;
   align-items: center;
   background-color: rgb(243, 246, 249);
+  border: 1pt solid rgb(179, 179, 179) ;
+  border-radius: 8px 8px 0 0;
 }
 
 .description {
@@ -40,7 +41,7 @@
   justify-items: center;
 }
 
-.profile__item {
+.item {
   display: flex;
   flex-direction: column;
   width: calc(100%/3);
