@@ -5,7 +5,7 @@ const FriendList = ({ friends }) => {
   const elementsLi = friends.map(({ id, isOnline, avatar, name}) => 
     <li key={id} className={styles.item}>
       <span className={styles.status} 
-        style={{ backgroundColor: isOnline? "green": "red"}}>
+        style={{ backgroundColor: isOnline? "#38e38e": "#f73f73"}}>
       </span>
 
       <img 

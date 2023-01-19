@@ -3,7 +3,7 @@
   width: 350px;
   margin: 0 auto;
   margin-bottom: 5px;
-  padding: 25px;
+  padding: 20px;
   border: 2px solid #ddd;
   border-radius: 13px;
   box-shadow: black;
@@ -21,7 +21,7 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  
+  border: 1pt solid rgb(197, 193, 193);
 }
 
 .avatar {
